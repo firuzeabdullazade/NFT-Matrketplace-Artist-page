@@ -1,0 +1,505 @@
+@import 'variables';
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    background-color: $background-color;
+    width: 100%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px 50px;
+    }
+
+    .nav-menu {
+        width: 607px;
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        font-weight: 600;
+        font-family: $main-font;
+        font-size: 16px;
+        line-height: 22px;
+
+        .nav-link {
+            text-decoration: none;
+            color: $text-color;
+        }
+
+        button {
+            background-color: $button-color;
+            border: $button-color;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 152px;
+            height: 60px;
+            border-radius: 20px;
+            gap: 12px;
+            color: $text-color;
+            font-weight: 600;
+            font-family: $main-font;
+            font-size: 16px;
+            line-height: 22px;
+
+        }
+    }
+
+}
+
+.cover-profile-image {
+    .avatar {
+        margin-top: -70px;
+        margin-left: 115px;
+        border: 2px solid $background-color;
+        border-radius: 20px;
+    }
+}
+
+.Artist-Info {
+    padding: 40px 115px;
+    color: $text-color;
+
+    .artist-info-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    .artist-info {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        h2 {
+            font-family: $main-font;
+            font-weight: 600;
+            font-size: 51px;
+            line-height: 56px;
+        }
+
+        .stats {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 510px;
+        }
+
+        h4 {
+            font-family: $secondary-font;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 39px;
+        }
+
+        .subhead {
+            font-family: $main-font;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 35px;
+        }
+
+        h5 {
+            font-family: $secondary-font;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 35px;
+            color: #858584;
+        }
+
+        .bio {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+        }
+
+        .web-links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .icons {
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+            }
+
+            .icons {
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+
+                button {
+                    background-color: transparent;
+                    border: none;
+                }
+            }
+        }
+    }
+
+    .CTAs {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+
+        .first-button {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 0px 50px;
+            gap: 12px;
+            width: 186px;
+            height: 60px;
+            background: $button-color;
+            border-radius: 20px;
+            border: solid $button-color;
+            font-family: $main-font;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+            color: $text-color;
+        }
+
+        .second-button {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 0px 30px;
+            gap: 12px;
+            width: 145px;
+            height: 60px;
+            border: 2px solid $button-color;
+            border-radius: 20px;
+            background-color: transparent;
+            font-family: $main-font;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+            color: $text-color;
+        }
+    }
+}
+
+.line {
+    border: 1px solid $secondary-background-color;
+}
+
+.head {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 115px 0px 115px;
+    color: $text-color;
+
+    .tab-1 {
+        border-bottom: 2px solid #858584;
+
+        .number-1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 32px;
+            background: #858584;
+            border-radius: 20px;
+        }
+    }
+
+    .tab-1,
+    .tab {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 30px;
+        gap: 16px;
+        width: 350px;
+        height: 60px;
+    }
+
+    h5 {
+        font-family: $main-font;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 31px;
+    }
+
+    .number-1,
+    .number {
+        font-family: $secondary-font;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .number {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 32px;
+        background: $secondary-background-color;
+        border-radius: 20px;
+    }
+}
+
+.NFT-cards-section {
+    padding: 80px 115px;
+    color: $text-color;
+    background-color: $secondary-background-color;
+
+    .NFT-cards-rows {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .NFT-cards-row {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .NFT-card {
+        display: flex;
+        flex-direction: column;
+
+        .NFT-info {
+            display: flex;
+            flex-direction: column;
+            padding: 20px 30px 25px;
+            gap: 25px;
+            border-radius: 0px 0px 20px 20px;
+            background-color: $background-color;
+
+            .artist-info {
+                gap: 5px;
+
+                h5 {
+                    font-family: $main-font;
+                    font-weight: 600;
+                    font-size: 22px;
+                    line-height: 31px;
+                }
+
+                .artist-avatar-name {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 12px;
+                    font-family: $secondary-font;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+            }
+
+            .additional-info {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                .price {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 8px;
+                }
+
+                .highest-bid {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    gap: 8px;
+                }
+
+                .top {
+                    font-family: $secondary-font;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 13px;
+                    color: #858584;
+                }
+
+                .bottom {
+                    font-family: $secondary-font;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 22px;
+                    color: $text-color;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: $secondary-background-color;
+    padding: 40px 115px;
+    gap: 31px;
+    border-top: 2px solid $background-color;
+
+    .footer-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .NFT-marketplace-info {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        color: #CCCCCC;
+    }
+
+    .additional-info {
+        width: 238px;
+        font-family: $main-font;
+        font-size: 16px;
+        line-height: 22px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .community-info {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            .icons {
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+
+                button {
+                    background-color: transparent;
+                    border: none;
+                }
+            }
+        }
+    }
+
+    .explore {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+        h5 {
+            font-family: $secondary-font;
+            font-size: 22px;
+            line-height: 35px;
+            color: $text-color;
+        }
+
+        .pages {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #CCCCCC;
+        }
+    }
+
+    .subscribe {
+        width: 420px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        h5 {
+            font-family: $secondary-font;
+            font-size: 22px;
+            line-height: 35px;
+            color: $text-color;
+        }
+
+        .subscribe-form-info {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            color: #CCCCCC;
+        }
+
+        .info {
+            padding-right: 150px;
+        }
+
+        .subscribe-form {
+            display: flex;
+            flex-direction: row;
+            gap: 0px;
+            height: 60px;
+            border-radius: 20px;
+            background-color: white;
+        }
+
+        .email {
+            width: 241px;
+            font-family: $main-font;
+            font-size: 16px;
+            line-height: 22px;
+            display: flex;
+            align-items: center;
+            color: $background-color;
+            padding-left: 20px;
+            padding-right: 12px;
+        }
+
+        button {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 0px 50px;
+            width: 179px;
+            font-family: $main-font;
+            font-size: 16px;
+            line-height: 22px;
+            background: $button-color;
+            border-radius: 20px;
+            border: $button-color;
+            color: $text-color;
+        }
+    }
+}
+
+.frame {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .divider {
+        border: 1px solid #858584;
+    }
+
+    .end {
+        font-family: $main-font;
+        font-size: 12px;
+        line-height: 13px;
+        color: #CCCCCC;
+    }
+}
