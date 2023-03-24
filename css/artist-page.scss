@@ -459,14 +459,18 @@ footer {
 
         .email {
             width: 241px;
-            font-family: $main-font;
-            font-size: 16px;
-            line-height: 22px;
             display: flex;
             align-items: center;
             color: $background-color;
             padding-left: 20px;
             padding-right: 12px;
+        }
+
+        input {
+            border: none;
+            font-family: $main-font;
+            font-size: 16px;
+            line-height: 22px;
         }
 
         button {
